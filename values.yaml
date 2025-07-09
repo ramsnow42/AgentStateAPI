@@ -1,0 +1,14 @@
+authService:
+  image: fabricx/auth:1.0
+  replicas: 3
+  port: 8080
+
+agentState:
+  image: fabricx/agent-state:1.0
+  replicas: 2
+  port: 8081
+
+interactionService:
+  image: fabricx/interaction-service:1.0
+  replicas: 2
+  port: 8082
